@@ -1,6 +1,10 @@
 # React Firebase Chat App
 This is a real-time chat application built using React, Firebase, and Sass. It allows users to log in with their Google accounts, select chat rooms, and send messages in real-time.
 
+## Live
+
+https://firebase-chat-app-woad.vercel.app
+
 ## Features:
 **Authentication**: Users can log in using their Google accounts via Firebase authentication.
 **Room Selection**: Users can select the chat room they want to join.

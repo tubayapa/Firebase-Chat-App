@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #13141a;
+  color: white;
+  min-height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.auth {
+  background: white;
+  color: #13141a;
+  width: 60vw;
+  max-width: 600px;
+  height: 70vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 700px) {
+  .auth {
+    width: 90vw;
+  }
+}
+.auth button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  background: #13141a;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+  outline: none;
+}
+.auth button:hover {
+  background: white;
+  color: #13141a;
+  border: 2px solid lightgray;
+}
+.auth button img {
+  width: 30px;
+}
+.auth button img {
+  width: 30px;
+}
+
+.room-page {
+  background: white;
+  color: #13141a;
+  padding: 50px 60px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .room-page {
+    width: 80vw;
+  }
+}
+.room-page input {
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.515);
+}
+.room-page button {
+  background: #13141a;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.room-page button:hover {
+  filter: brightness(70%);
+}
+.room-page button:last-child {
+  background: crimson;
+}
+
+.chat-page {
+  background: white;
+  height: 90vh;
+  width: 70vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 800px;
+  overflow: hidden;
+}
+@media (max-width: 650px) {
+  .chat-page {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+}
+
+.chat-page header {
+  background: coral;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.chat-page header .cur-user {
+  font-size: 18px;
+  font-weight: bold;
+}
+.chat-page header .cur-room {
+  font-size: 18px;
+  font-weight: bold;
+}
+.chat-page header button {
+  background: blue;
+  outline: none;
+  border: none;
+  padding: 6px;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.chat-page form {
+  background: coral;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 20px;
+}
+.chat-page form input {
+  width: 70%;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 10px gray;
+}
+.chat-page form button {
+  background: blue;
+  outline: none;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.chat-page main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  gap: 10px;
+  padding: 10px;
+}
+.chat-page main::-webkit-scrollbar {
+  background: transparent;
+  width: 4px;
+}
+.chat-page main::-webkit-scrollbar-thumb {
+  background: coral;
+  border-radius: 10px;
+}
+
+.msg-other {
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+.msg-other .user-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.msg-other img {
+  width: 40px;
+  border-radius: 50%;
+}
+.msg-other span {
+  font-weight: bold;
+}
+
+.msg-user {
+  background-color: blue;
+  align-self: flex-end;
+  padding: 4px 8px;
+  border-radius: 7px 7px 0 7px;
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */
